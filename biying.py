@@ -56,8 +56,6 @@ class BingBgDownloader(object):
         #没有英文括号时排查中文小括号（统一名称格式）
         if pos<0:
             pos = img_info['copyright'].find('（')
-
-        if pos<0:
             zh_name = img_info['copyright']
         else :
             zh_name = img_info['copyright'][0:pos]
